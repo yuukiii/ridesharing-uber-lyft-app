@@ -18,6 +18,7 @@ import com.mindorks.ridesharing.R
 import com.mindorks.ridesharing.data.network.NetworkService
 import com.mindorks.ridesharing.utils.MapUtils
 import com.mindorks.ridesharing.utils.PermissionUtils
+import com.mindorks.ridesharing.utils.ViewUtils
 
 class MapsActivity : AppCompatActivity(), MapsView, OnMapReadyCallback {
 
@@ -36,6 +37,7 @@ class MapsActivity : AppCompatActivity(), MapsView, OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
+        ViewUtils.enableTransparentStatusBar(window)
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -64,10 +66,6 @@ class MapsActivity : AppCompatActivity(), MapsView, OnMapReadyCallback {
         )
     }
 
-    private fun enableMyLocationOnMap() {
-        googleMap.isMyLocationEnabled = true
-    }
-
     private fun setUpLocationListener() {
         fusedLocationProviderClient = FusedLocationProviderClient(this)
         // for getting the current location update after every 2 seconds
@@ -80,7 +78,6 @@ class MapsActivity : AppCompatActivity(), MapsView, OnMapReadyCallback {
                     for (location in locationResult.locations) {
                         if (currentLatLng == null) {
                             currentLatLng = LatLng(location.latitude, location.longitude)
-                            enableMyLocationOnMap()
                             moveCamera(currentLatLng)
                             animateCamera(currentLatLng)
                             presenter.requestNearbyCabs(currentLatLng!!)
