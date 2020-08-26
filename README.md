@@ -1,16 +1,11 @@
 # Ride-Sharing Uber Lyft Android App
-Learn to build a ride-sharing Android Taxi Clone App like Uber, Lyft - Open-Source Project By MindOrks
+ride-sharing Android Taxi Clone App like Uber, Lyft - Open-Source Project By MindOrks
 
-[![MindOrks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
-[![MindOrks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/MindorksOpenSource/ridesharing-uber-lyft-app/master/assets/banner-ridesharing-uber-lyft-app.jpg">
-</p>
 <br>
 
 ## About this Open Source Project
-This open-source project is for you(community). Our Team at [MindOrks](https://mindorks.com) has taken this initiative to promote Android Learning in the best possible way. We are determined to provide quality content for everyone. Let's do it together by learning from this project.
+This open-source project is for you(community). 
 
 ## We will build and learn the following for the App like Uber and Lyft:
 * Create Rider Android Clone App
