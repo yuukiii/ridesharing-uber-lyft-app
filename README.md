@@ -240,9 +240,7 @@ A WebSocket is a persistent connection between a client and server. WebSockets p
     }
     ```  
 
-### Find this project useful ? :heart:
 
-* Support it by clicking the :star: button on the upper right of this page. :v:
 
 ### License
 ```
